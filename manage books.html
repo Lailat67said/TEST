@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Members - Library System</title>
+    <link href="Bootstrap/boot/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Bootstrap/boot/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Library System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage-users.html">Manage Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage-books.html">Manage Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="manage-members.html">Manage Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="book-issuance.html">Book Issuance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage-returns.html">Manage Returns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage-reports.html">Reports</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                        </a>
+                        <div class="container mt-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h1>Manage Books</h1>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addUserModal">
+                                    Add New Books
+                                </button>
+                            </div>
+                    
+                            <div class="card shadow-sm p-3">
+                                <table id="usersTable" class="table table-striped table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Title</th>
+                                            <th>ISBN</th>
+                                            <th>Author</th>
+                                            <th>Publisher</th>
+                                            <th>Status</th>
+                                            <th>Edit</th>
+                                            <th>Delete</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>The Great Gasby</td>
+                                            <td>29927798</td>
+                                            <td>E. Scort uwoya</td>
+                                            <td>tunu vuai</td>
+                                            <td><span class="badge bg-warning">Block</span></td>
+                                            <td><button class="btn btn-info btn-sm">Edit</button></td>
+                                            <td><button class="btn btn-danger btn-sm">Delete</button></td>
+                                            
+                    
+                                        </tr>
+                                        <tr>
+                                            <td>Passed like a shadow</td>
+                                            <td>468398</td>
+                                            <td>nyambari nyangwine</td>
+                                            <td>Johnson hazard</td>
+                                            <td><span class="badge bg-warning">Block</span></td>
+                                            <td><button class="btn btn-info btn-sm">Edit</button></td>
+                                            <td><button class="btn btn-danger btn-sm">Delete</button></td>
+                                        
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                      </form>
+                    
