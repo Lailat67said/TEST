@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Members - Library System</title>
+    <link href="Bootstrap/boot/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Bootstrap/boot/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Library System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage-users.html">Manage Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage-books.html">Manage Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="manage-members.html">Manage Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="book-issuance.html">Book Issuance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage-returns.html">Manage Returns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage-reports.html">Reports</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Change Password</a></li>
+                            <li><a class="dropdown-item" href="#">Change Profile</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                       </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h1>Manage members</h1>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addUserModal">
+                Add New members
+            </button>
+        </div>
+
+        <div class="card shadow-sm p-3">
+            <table id="usersTable" class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jane Doe</td>
+                        <td>MEM01</td>
+                        <td>123-456-7890</td>
+                        <td>Jane@example.com</td>
+                        <td><button class="btn btn-info btn-sm">Edit</button></td>
+                        <td><button class="btn btn-danger btn-sm">Delete</button></td>
+
+                    </tr>
+                    <tr>
+                        <td>John Smith</td>
+                        <td>MEM02</td>
+                        <td>987-456-490</td>
+                        <td>John@example.com</td>
+                        <td><button class="btn btn-info btn-sm">Edit</button></td>
+                        <td><button class="btn btn-danger btn-sm">Delete</button></td>
+                    
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </form>
